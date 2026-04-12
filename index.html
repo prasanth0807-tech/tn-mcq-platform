@@ -23,6 +23,29 @@
   --mono:'Courier Prime','Courier New',monospace;
 }
 html{scroll-behavior:smooth}
+   <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDxNDQJdYQW8e0whcyakYFmEDVeCd5m7Ig",
+    authDomain: "quiz-portal-e9a56.firebaseapp.com",
+    projectId: "quiz-portal-e9a56",
+    storageBucket: "quiz-portal-e9a56.firebasestorage.app",
+    messagingSenderId: "129782734041",
+    appId: "1:129782734041:web:e3cb6766a729d56257b2c8",
+    measurementId: "G-YMN3LQ3ZT1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 body{
   background:var(--paper);
   color:var(--ink);
